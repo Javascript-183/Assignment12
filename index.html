@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ფორმის ვალიდაცია</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="konteiner">
+  <h1>ფორმის ვალიდაცია</h1>
+  <form id="validationForm">
+    <!-- მისამართი -->
+    <label for="address">მისამართი:</label>
+    <input type="text" id="address" name="address" required>
+    <span id="addressError" class="error"></span>
+    
+
+    <!-- ტელეფონის ნომერი -->
+    <label for="phone">ტელეფონის ნომერი:</label>
+    <input type="tel" id="phone" name="phone" required>
+    <span id="phoneError" class="error"></span>
+    
+
+    <!-- საფოსტო კოდი -->
+    <label for="postalCode">საფოსტო კოდი:</label>
+    <input type="text" id="postalCode" name="postalCode" required>
+    <span id="postalCodeError" class="error"></span>
+    
+
+    <button type="submit">გაგზავნა</button> 
+    <span id="formSuccess" class="success"></span>
+  </form>
+</div>
+  <script src="./scripts/script.js"></script>
+</body>
+</html>
